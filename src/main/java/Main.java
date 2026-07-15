@@ -84,6 +84,21 @@ public class Main {
     mdFileSB.append("\n");
   }
 
+  private static void addSkills() throws IOException {
+    Map<String, List<String>> skillsMapInAlpha = getSkillsMapInAlphaOrderForSectionsAndSkills();
+
+    for (String section : skillsMapInAlpha.keySet()) {
+      List<String> skills = skillsMapInAlpha.get(section);
+
+      addSection(section, skills);
+    }
+  }
+
+  private static void addSection(String section, List<String> skills) {
+    addHeading2(section);
+    addUnorderedList(skills);
+  }
+
   private static Map<String, List<String>> getSkillsMapInAlphaOrderForSectionsAndSkills()
       throws IOException {
     Map<String, List<String>> skillsMap = getSkillsMap();
