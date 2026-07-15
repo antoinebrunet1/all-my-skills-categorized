@@ -15,6 +15,10 @@ public class Main {
   private static final String HEADER_MD_LOCATION = RESOURCES_LOCATION + "/header.md";
 
   public static void main(String[] args) throws IOException {
+    printSkillsMarkdownFile();
+  }
+
+  private static void printSkillsMarkdownFile() throws IOException {
     addHeader();
     addEmptyLine();
     addSkills();
