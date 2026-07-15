@@ -8,6 +8,8 @@ public class Main {
   private static final StringBuilder mdFileSB = new StringBuilder();
 
   public static void main(String[] args) {
+    addHeader();
+    System.out.println(mdFileSB);
   }
 
   private static void addHeader() {
