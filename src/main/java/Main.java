@@ -16,7 +16,7 @@ public class Main {
     addHeading2("Antoine Brunet");
     addText("Software developer + Quality assurance analyst // I build scalable software and " +
         "guarantee quality using pipelines with dev and QA checks");
-    addUnorderedList(getContactList());
+    addContactList();
   }
 
   private static void addHeading1(String text) {
@@ -50,5 +50,9 @@ public class Main {
 
   private static String getContactListItem(String description, String value) {
     return (new BoldText(description)).toString() + (new BoldText(":")) + value;
+  }
+
+  private static void addContactList() {
+    addUnorderedList(getContactList());
   }
 }
