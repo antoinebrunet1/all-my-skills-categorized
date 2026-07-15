@@ -1,0 +1,88 @@
+{
+  "Languages": [
+    "English (Bilingual proficiency)",
+    "French (Native)"
+  ],
+  "Soft skills": [
+    "Communication",
+    "Leadership",
+    "Problem solving",
+    "Teamwork",
+    "Creativity",
+    "Innovation"
+  ],
+  "Programming languages": [
+    "C",
+    "CSS",
+    "HTML",
+    "Java",
+    "JavaScript",
+    "Python",
+    "SQL",
+    "TypeScript",
+    "VBA"
+  ],
+  "Web frameworks": [
+    "Angular",
+    "Spring Boot"
+  ],
+  "Tests": [
+    "Cucumber",
+    "CUnit",
+    "Cypress",
+    "JUnit",
+    "Playwright",
+    "Postman",
+    "REST Assured",
+    "Selenium",
+    "TestNG",
+    "Angular unit testing",
+    "unittest",
+    "pytest"
+  ],
+  "Continuous Integration and Continuous Delivery (CI/CD)": [
+    "Azure Pipelines",
+    "Docker",
+    "GitHub Actions",
+    "GitLab CI/CD"
+  ],
+  "Presentation": [
+    "Markdown",
+    "LaTeX"
+  ],
+  "Shell": [
+    "GNU Make/Makefile",
+    "Bash"
+  ],
+  "IDEs/Code editors": [
+    "Pycharm",
+    "Visual Studio Code",
+    "IntelliJ"
+  ],
+  "Fields other than computer science": [
+    "Mathematics",
+    "Statistics"
+  ],
+  "Operating systems": [
+    "Linux",
+    "Windows"
+  ],
+  "Build systems": [
+    "Maven"
+  ],
+  "Version control": [
+    "GitHub",
+    "GitLab",
+    "Bitbucket",
+    "Azure Repos"
+  ],
+  "Project management": [
+    "Jira",
+    "Azure DevOps"
+  ],
+  "Logs/Metrics": [
+    "Google Cloud console",
+    "Datadog",
+    "Splunk"
+  ]
+}
