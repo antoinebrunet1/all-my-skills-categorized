@@ -12,11 +12,19 @@ public class Main {
   }
 
   private static void addHeader() {
-    addHeading("All my skills categorized", 1);
-    addHeading("Antoine Brunet", 2);
+    addHeading1("All my skills categorized");
+    addHeading2("Antoine Brunet");
     addText("Software developer + Quality assurance analyst // I build scalable software and " +
         "guarantee quality using pipelines with dev and QA checks");
     addUnorderedList(getContactList());
+  }
+
+  private static void addHeading1(String text) {
+    addHeading(text, 1);
+  }
+
+  private static void addHeading2(String text) {
+    addHeading(text, 2);
   }
 
   private static void addHeading(String text, int level) {
