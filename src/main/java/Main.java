@@ -22,6 +22,7 @@ public class Main {
       "Email:", "antoinebrunet1@outlook.com",
       "GitHub profile:", "https://github.com/antoinebrunet"
   );
+  private static final String SKILLS_JSON_LOCATION = "src/main/resources/skills.json";
 
   public static void main(String[] args) {
     addHeader();
@@ -81,7 +82,7 @@ public class Main {
   }
 
   private static Map<String, List<String>> getSkillsMap() throws IOException {
-    String skillsString = Files.readString(Paths.get("src/main/resources/skills.json"));
+    String skillsString = Files.readString(Paths.get(SKILLS_JSON_LOCATION));
     ObjectMapper mapper = new ObjectMapper();
 
     return mapper.readValue(skillsString, new TypeReference<>() {});
