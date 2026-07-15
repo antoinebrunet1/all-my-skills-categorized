@@ -78,7 +78,10 @@
   ],
   "Project management": [
     "Jira",
-    "Azure DevOps"
+    "Azure DevOps",
+    "Agile",
+    "SCRUM",
+    "Kanban"
   ],
   "Logs/Metrics": [
     "Google Cloud console",
