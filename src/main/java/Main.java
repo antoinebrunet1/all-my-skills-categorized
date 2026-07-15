@@ -96,8 +96,9 @@ public class Main {
         .forEach(
             key -> skillsMapInAlpha.put(
                 key,
-                new HashSet<>(skillsMap.get(key))
+                skillsMap.get(key)
                     .stream()
+                    .sorted()
                     .toList()
             )
         );
