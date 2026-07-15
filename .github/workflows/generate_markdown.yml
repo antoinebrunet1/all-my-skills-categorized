@@ -22,3 +22,12 @@ jobs:
         run: mvn -q -e compile
       - name: Print Markdown file
         run: mvn -q -e -DskipTests exec:java -Dexec.mainClass="org.example.Main" > skills.md
+      - name: Setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+      - name: Commit
+        run: |
+          git add skills.md
+          git commit -m "skills.md added by GitHub Actions"
+          git push origin master
