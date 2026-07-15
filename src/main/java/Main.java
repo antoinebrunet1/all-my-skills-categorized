@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import net.steppschuh.markdowngenerator.list.UnorderedList;
 import net.steppschuh.markdowngenerator.text.Text;
 import net.steppschuh.markdowngenerator.text.emphasis.BoldText;
@@ -6,6 +8,15 @@ import net.steppschuh.markdowngenerator.text.heading.Heading;
 
 public class Main {
   private static final StringBuilder mdFileSB = new StringBuilder();
+  private static final String HEADING_1 = "All my skills categorized";
+  private static final String FULL_NAME = "Antoine Brunet";
+  private static final String BIO = "Software developer + Quality assurance analyst // I build " +
+      "scalable software and guarantee quality using pipelines with dev and QA checks";
+  private static final Map<String, String> CONTACT_LIST = Map.of(
+      "LinkedIn profile:", "https://www.linkedin.com/in/antoinebrunet97/",
+      "Email:", "antoinebrunet1@outlook.com",
+      "GitHub profile:", "https://github.com/antoinebrunet"
+  );
 
   public static void main(String[] args) {
     addHeader();
@@ -13,10 +24,9 @@ public class Main {
   }
 
   private static void addHeader() {
-    addHeading1("All my skills categorized");
-    addHeading2("Antoine Brunet");
-    addText("Software developer + Quality assurance analyst // I build scalable software and " +
-        "guarantee quality using pipelines with dev and QA checks");
+    addHeading1(HEADING_1);
+    addHeading2(FULL_NAME);
+    addText(BIO);
     addEmptyLine();
     addContactList();
   }
@@ -42,12 +52,15 @@ public class Main {
   }
 
   private static List<String> getContactList() {
-    return List.of(
-        getContactListItem("LinkedIn profile:",
-            "https://www.linkedin.com/in/antoinebrunet97/"),
-        getContactListItem("Email:", "antoinebrunet1@outlook.com"),
-        getContactListItem("GitHub profile:", "https://github.com/antoinebrunet")
-    );
+    List<String> contactList = new ArrayList<>();
+
+    for (String description : CONTACT_LIST.keySet()) {
+      String value = CONTACT_LIST.get(description);
+      String contactListItem = getContactListItem(description, value);
+      contactList.add(contactListItem);
+    }
+
+    return contactList;
   }
 
   private static String getContactListItem(String description, String value) {
