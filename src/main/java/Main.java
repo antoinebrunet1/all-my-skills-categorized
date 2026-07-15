@@ -27,8 +27,9 @@ public class Main {
   );
   private static final String SKILLS_JSON_LOCATION = "src/main/resources/skills.json";
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
     addHeader();
+    addSkills();
     System.out.println(mdFileSB);
   }
 
