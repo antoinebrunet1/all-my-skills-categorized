@@ -22,5 +22,3 @@ jobs:
         run: mvn -q -e compile
       - name: Print Markdown file
         run: mvn -q -e -DskipTests exec:java -Dexec.mainClass="org.example.Main" > skills.md
-      - name: cat docs/skills.md
-        run: cat skills.md
