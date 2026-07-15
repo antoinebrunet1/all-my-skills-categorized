@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import net.steppschuh.markdowngenerator.list.UnorderedList;
@@ -79,6 +80,20 @@ public class Main {
 
   private static void addEmptyLine() {
     mdFileSB.append("\n");
+  }
+
+  private static Map<String, List<String>> getSkillsMapInAlphaOrderForSectionsAndSkills()
+      throws IOException {
+    Map<String, List<String>> skillsMap = getSkillsMap();
+    Map<String, List<String>> skillsMapInAlpha = new LinkedHashMap<>();
+
+    skillsMap
+        .keySet()
+        .stream()
+        .sorted()
+        .forEach(key -> skillsMapInAlpha.put(key, skillsMap.get(key)));
+
+    return skillsMapInAlpha;
   }
 
   private static Map<String, List<String>> getSkillsMap() throws IOException {
