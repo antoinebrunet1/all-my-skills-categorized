@@ -25,7 +25,7 @@ public class Main {
   private static void addHeader() throws IOException {
     String header = Files.readString(Paths.get(HEADER_MD_LOCATION));
 
-    mdFileSB.append(header);
+    mdFileSB.append(header).append("\n");
   }
 
   private static void addHeading2(String text) {
