@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.List;
 import net.steppschuh.markdowngenerator.list.UnorderedList;
 import net.steppschuh.markdowngenerator.text.Text;
