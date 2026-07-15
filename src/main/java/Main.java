@@ -17,6 +17,7 @@ public class Main {
     addHeading2("Antoine Brunet");
     addText("Software developer + Quality assurance analyst // I build scalable software and " +
         "guarantee quality using pipelines with dev and QA checks");
+    addEmptyLine();
     addContactList();
   }
 
@@ -42,18 +43,22 @@ public class Main {
 
   private static List<String> getContactList() {
     return List.of(
-        getContactListItem("LinkedIn profile",
+        getContactListItem("LinkedIn profile:",
             "https://www.linkedin.com/in/antoinebrunet97/"),
-        getContactListItem("Email", "antoinebrunet1@outlook.com"),
-        getContactListItem("GitHub profile", "https://github.com/antoinebrunet")
+        getContactListItem("Email:", "antoinebrunet1@outlook.com"),
+        getContactListItem("GitHub profile:", "https://github.com/antoinebrunet")
     );
   }
 
   private static String getContactListItem(String description, String value) {
-    return (new BoldText(description)).toString() + (new BoldText(":")) + value;
+    return new BoldText(description) + " " + value;
   }
 
   private static void addContactList() {
     addUnorderedList(getContactList());
+  }
+
+  private static void addEmptyLine() {
+    mdFileSB.append("\n");
   }
 }
