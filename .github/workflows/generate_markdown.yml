@@ -19,4 +19,4 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
       - name: Print Markdown file
-        run: mvn -q -e -DskipTests exec:java -Dexec.mainClass="Main"
+        run: mvn -q -e -DskipTests exec:java -Dexec.mainClass="org.example.Main"
