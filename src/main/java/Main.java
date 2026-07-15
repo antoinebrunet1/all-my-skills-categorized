@@ -4,9 +4,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 import net.steppschuh.markdowngenerator.list.UnorderedList;
 import net.steppschuh.markdowngenerator.text.Text;
 import net.steppschuh.markdowngenerator.text.emphasis.BoldText;
@@ -91,7 +93,14 @@ public class Main {
         .keySet()
         .stream()
         .sorted()
-        .forEach(key -> skillsMapInAlpha.put(key, skillsMap.get(key)));
+        .forEach(
+            key -> skillsMapInAlpha.put(
+                key,
+                new HashSet<>(skillsMap.get(key))
+                    .stream()
+                    .toList()
+            )
+        );
 
     return skillsMapInAlpha;
   }
