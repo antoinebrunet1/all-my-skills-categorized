@@ -21,6 +21,6 @@ jobs:
       - name: Compile project
         run: mvn -q -e compile
       - name: Print Markdown file
-        run: mvn -q -e -DskipTests exec:java -Dexec.mainClass="org.example.Main" > skills.md && mkdir docs && skills.md docs/skills.md
+        run: mvn -q -e -DskipTests exec:java -Dexec.mainClass="org.example.Main" > skills.md && mkdir docs && mv skills.md docs/skills.md
       - name: cat docs/skills.md
         run: cat docs/skills.md
