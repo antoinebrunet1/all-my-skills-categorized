@@ -1,3 +1,8 @@
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -73,5 +78,12 @@ public class Main {
 
   private static void addEmptyLine() {
     mdFileSB.append("\n");
+  }
+
+  private static Map<String, List<String>> getSkillsMap() throws IOException {
+    String skillsString = Files.readString(Paths.get("src/main/resources/skills.json"));
+    ObjectMapper mapper = new ObjectMapper();
+
+    return mapper.readValue(skillsString, new TypeReference<>() {});
   }
 }
