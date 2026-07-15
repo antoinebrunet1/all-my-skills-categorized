@@ -24,6 +24,7 @@ public class Main {
     addHeader();
     addEmptyLine();
     addSkills();
+    removeLastTwoBlankLines();
     System.out.println(mdFileSB);
   }
 
@@ -67,5 +68,9 @@ public class Main {
     ObjectMapper mapper = new ObjectMapper();
 
     return mapper.readValue(skillsString, new TypeReference<>() {});
+  }
+
+  private static void removeLastTwoBlankLines() {
+    mdFileSB.delete(mdFileSB.length() - 2, mdFileSB.length());
   }
 }
