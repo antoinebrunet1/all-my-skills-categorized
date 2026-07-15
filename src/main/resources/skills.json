@@ -87,5 +87,9 @@
     "Google Cloud console",
     "Datadog",
     "Splunk"
+  ],
+  "File formats": [
+    "JSON",
+    "JSON schema"
   ]
 }
