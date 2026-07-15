@@ -27,6 +27,7 @@ public class Main {
 
   public static void main(String[] args) throws IOException {
     addHeader();
+    addEmptyLine();
     addSkills();
     System.out.println(mdFileSB);
   }
@@ -95,7 +96,9 @@ public class Main {
 
   private static void addSection(String section, List<String> skills) {
     addHeading2(section);
+    addEmptyLine();
     addUnorderedList(skills);
+    addEmptyLine();
   }
 
   private static Map<String, List<String>> getSkillsMapInAlphaOrderForSectionsAndSkills()
