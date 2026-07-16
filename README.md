@@ -1,5 +1,7 @@
 # All my skills categorized
 
+**Deployed HTML page:** [https://antoinebrunet1.github.io/all-my-skills-categorized/skills.html](https://antoinebrunet1.github.io/all-my-skills-categorized/skills.html)
+
 ## 🎯 Goal
 
 To have all my skills categorized on a hosted HTML page
