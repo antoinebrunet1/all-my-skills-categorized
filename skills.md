@@ -8,63 +8,54 @@ Software developer + Quality assurance analyst // I build scalable software and 
 
 - **LinkedIn profile:** [https://www.linkedin.com/in/antoinebrunet97/](https://www.linkedin.com/in/antoinebrunet97/)
 - **Email**: antoinebrunet1@outlook.com
-- **GitHub profile:** [https://github.com/antoinebrunet](https://www.linkedin.com/in/antoinebrunet97/)
+- **GitHub profile:** [https://github.com/antoinebrunet1](https://github.com/antoinebrunet1)
 
 Section titles and skills are in alphabetical order.
 
-Build systems
--------------
+### Build systems
 
 - Maven
 
-Continuous Integration and Continuous Delivery (CI/CD)
-------------------------------------------------------
+### Continuous Integration and Continuous Delivery (CI/CD)
 
 - Azure Pipelines
 - Docker
 - GitHub Actions
 - GitLab CI/CD
 
-Fields other than computer science
-----------------------------------
+### Fields other than computer science
 
 - Mathematics
 - Statistics
 
-IDEs/Code editors
------------------
+### IDEs/Code editors
 
 - IntelliJ
 - PyCharm
 - Visual Studio Code
 
-Languages
----------
+### Languages
 
 - English (Bilingual proficiency)
 - French (Native)
 
-Logs/Metrics
-------------
+### Logs/Metrics
 
 - Datadog
 - Google Cloud console
 - Splunk
 
-Operating systems
------------------
+### Operating systems
 
 - Linux
 - Windows
 
-Presentation
-------------
+### Presentation
 
 - LaTeX
 - Markdown
 
-Programming languages
----------------------
+### Programming languages
 
 - C
 - CSS
@@ -76,8 +67,7 @@ Programming languages
 - TypeScript
 - VBA
 
-Project management
-------------------
+### Project management
 
 - Agile
 - Azure DevOps
@@ -85,14 +75,12 @@ Project management
 - Kanban
 - SCRUM
 
-Shell
------
+### Shell
 
 - Bash
 - GNU Make/Makefile
 
-Soft skills
------------
+### Soft skills
 
 - Communication
 - Creativity
@@ -101,8 +89,7 @@ Soft skills
 - Problem solving
 - Teamwork
 
-Tests
------
+### Tests
 
 - Angular unit testing
 - CUnit
@@ -117,22 +104,19 @@ Tests
 - pytest
 - unittest
 
-Text formats
-------------
+### Text formats
 
 - JSON
 - JSON schema
 
-Version control
----------------
+### Version control
 
 - Azure Repos
 - Bitbucket
 - GitHub
 - GitLab
 
-Web frameworks
---------------
+### Web frameworks
 
 - Angular
 - Spring Boot
