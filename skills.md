@@ -10,8 +10,6 @@ Software developer + Quality assurance analyst // I build scalable software and 
 - **Email**: antoinebrunet1@outlook.com
 - **GitHub profile:** [https://github.com/antoinebrunet1](https://github.com/antoinebrunet1)
 
-Section titles and skills are in alphabetical order.
-
 ### Build systems
 
 - Maven
