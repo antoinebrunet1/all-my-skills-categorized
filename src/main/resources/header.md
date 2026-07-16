@@ -8,6 +8,6 @@ Software developer + Quality assurance analyst // I build scalable software and 
 
 - **LinkedIn profile:** [https://www.linkedin.com/in/antoinebrunet97/](https://www.linkedin.com/in/antoinebrunet97/)
 - **Email**: antoinebrunet1@outlook.com
-- **GitHub profile:** [https://github.com/antoinebrunet](https://www.linkedin.com/in/antoinebrunet97/)
+- **GitHub profile:** [https://github.com/antoinebrunet1](https://github.com/antoinebrunet1)
 
 Section titles and skills are in alphabetical order.
