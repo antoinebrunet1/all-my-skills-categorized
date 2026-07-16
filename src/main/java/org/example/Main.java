@@ -33,8 +33,8 @@ public class Main {
     mdFileSB.append(header).append("\n");
   }
 
-  private static void addHeading2(String text) {
-    mdFileSB.append(new Heading(text, 2)).append("\n");
+  private static void addHeading3(String text) {
+    mdFileSB.append(new Heading(text, 3)).append("\n");
   }
 
   private static void addUnorderedList(List<String> items) {
@@ -56,7 +56,7 @@ public class Main {
   }
 
   private static void addSection(String section, List<String> skills) {
-    addHeading2(section);
+    addHeading3(section);
     addEmptyLine();
     addUnorderedList(skills.stream().sorted().toList());
     addEmptyLine();
