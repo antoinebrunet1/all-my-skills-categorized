@@ -4,7 +4,7 @@ All my skills categorized
 Antoine Brunet
 --------------
 
-Software developer + Quality assurance analyst // I build scalable software and guarantee quality using pipelines with development and QA checks
+Software developer + Quality assurance analyst // I produce scalable code and guarantee quality from software development and QA perspectives using pipelines
 
 - **LinkedIn profile:** [https://www.linkedin.com/in/antoinebrunet97/](https://www.linkedin.com/in/antoinebrunet97/)
 - **Email:** antoinebrunet1@outlook.com
