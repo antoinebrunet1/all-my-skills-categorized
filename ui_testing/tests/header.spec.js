@@ -1,0 +1,18 @@
+const { test, expect } = require('@playwright/test');
+const testData = JSON.parse(JSON.stringify(require('../test_data.json')))
+
+test('Header has correct text', async function ({ page }) {
+    await page.goto(testData.url);
+
+    const h1Locator = await page.locator('h1')
+    const h2Locator = await page.locator('h2')
+    const pLocator = await page.locator('p')
+    const liLocator = await page.locator('//ul/li')
+
+    await expect(h1Locator.first()).toHaveText(testData.expectedText.h1)
+    await expect(h2Locator.first()).toHaveText(testData.expectedText.h2)
+    await expect(pLocator.first()).toHaveText(testData.expectedText.p)
+    await expect(liLocator.first()).toHaveText(testData.expectedText.ul[0])
+    await expect(liLocator.nth(1)).toHaveText(testData.expectedText.ul[1])
+    await expect(liLocator.nth(2)).toHaveText(testData.expectedText.ul[2])
+});
