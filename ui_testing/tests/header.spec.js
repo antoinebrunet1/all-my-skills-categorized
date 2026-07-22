@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const {checkIfIsAbove, checkIFLocatorHasText} = require("./util");
+const {checkIfIsAbove, checkIfLocatorHasText} = require("./util");
 const testData = JSON.parse(JSON.stringify(require('../test_data.json')))
 
 test.beforeEach(async ({ page }) => {
@@ -12,12 +12,12 @@ test('Header has correct text', async function ({ page }) {
     const pLocator = await page.locator('p')
     const liLocator = await page.locator('//ul/li')
 
-    await checkIFLocatorHasText(h1Locator, testData.expectedText.h1)
-    await checkIFLocatorHasText(h2Locator, testData.expectedText.h2)
-    await checkIFLocatorHasText(pLocator, testData.expectedText.p)
-    await checkIFLocatorHasText(liLocator.first(), testData.expectedText.ul[0])
-    await checkIFLocatorHasText(liLocator.nth(1), testData.expectedText.ul[1])
-    await checkIFLocatorHasText(liLocator.nth(2), testData.expectedText.ul[2])
+    await checkIfLocatorHasText(h1Locator, testData.expectedText.h1)
+    await checkIfLocatorHasText(h2Locator, testData.expectedText.h2)
+    await checkIfLocatorHasText(pLocator, testData.expectedText.p)
+    await checkIfLocatorHasText(liLocator.first(), testData.expectedText.ul[0])
+    await checkIfLocatorHasText(liLocator.nth(1), testData.expectedText.ul[1])
+    await checkIfLocatorHasText(liLocator.nth(2), testData.expectedText.ul[2])
 });
 
 test('Header sections are in correct order', async function ({ page }) {
