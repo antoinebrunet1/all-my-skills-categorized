@@ -8,3 +8,7 @@ export async function checkIfIsAbove(locator1, locator2) {
 
     expect(locator1BottomY).toBeLessThan(locator2Y)
 }
+
+export async function checkIFLocatorHasText(locator, text) {
+    await expect(locator).toHaveText(text)
+}
