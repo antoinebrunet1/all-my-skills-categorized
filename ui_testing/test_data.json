@@ -9,5 +9,12 @@
       "Email: antoinebrunet1@outlook.com",
       "GitHub profile: https://github.com/antoinebrunet1"
     ]
+  },
+  "selectors": {
+    "h1": "h1",
+    "h2": "h2",
+    "p": "p",
+    "li": "li",
+    "ul": "ul"
   }
 }
