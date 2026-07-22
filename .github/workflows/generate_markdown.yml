@@ -12,9 +12,6 @@ jobs:
   generate-markdown:
     name: Generate Markdown
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./markdown_printer
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-java@v4
@@ -22,9 +19,9 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
       - name: Compile project
-        run: mvn -q -e compile
+        run: cd markdown_printer && mvn -q -e compile
       - name: Generate skills.md
-        run: mvn -q -e -DskipTests exec:java -Dexec.mainClass="org.example.Main" > skills.md
+        run: cd markdown_printer && mvn -q -e -DskipTests exec:java -Dexec.mainClass="org.example.Main" > skills.md
       - name: Setup git config
         run: |
           git config user.name "GitHub Actions Bot"
