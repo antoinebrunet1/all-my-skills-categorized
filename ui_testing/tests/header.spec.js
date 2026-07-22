@@ -1,4 +1,5 @@
 const { test, expect } = require('@playwright/test');
+const {checkIfIsAbove} = require("./util");
 const testData = JSON.parse(JSON.stringify(require('../test_data.json')))
 
 test('Header has correct text', async function ({ page }) {
@@ -15,4 +16,17 @@ test('Header has correct text', async function ({ page }) {
     await expect(liLocator.first()).toHaveText(testData.expectedText.ul[0])
     await expect(liLocator.nth(1)).toHaveText(testData.expectedText.ul[1])
     await expect(liLocator.nth(2)).toHaveText(testData.expectedText.ul[2])
+});
+
+test('Header sections are in correct order', async function ({ page }) {
+    await page.goto(testData.url);
+
+    const h1Locator = await page.locator('h1')
+    const h2Locator = await page.locator('h2')
+    const pLocator = await page.locator('p')
+    const ulLocator = await page.locator('ul').first()
+
+    await checkIfIsAbove(h1Locator, h2Locator)
+    await checkIfIsAbove(h2Locator, pLocator)
+    await checkIfIsAbove(pLocator, ulLocator)
 });
