@@ -12,3 +12,16 @@ export async function checkIfIsAbove(locator1, locator2) {
 export async function checkIfLocatorHasText(locator, text) {
     await expect(locator).toHaveText(text)
 }
+
+export async function checkIfElementsAreInAlphabeticalOrder(locators) {
+    const texts = []
+
+    for (const locator of locators) {
+        const text = await locator.innerText()
+        texts.push(text)
+    }
+
+    const sortedTexts = texts.sort()
+
+    expect(JSON.stringify(texts) === JSON.stringify(sortedTexts)).toBeTruthy()
+}
