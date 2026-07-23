@@ -1,5 +1,7 @@
 jekyll-and-bundler-install:
-	bash jekyll_and_bundler_install.sh
+	apt-get update
+	apt-get install ruby-full -y
+	gem install jekyll
 
 run-ui-tests-ci:
 	cd ui_testing && npm install && npx playwright test --reporter=line
