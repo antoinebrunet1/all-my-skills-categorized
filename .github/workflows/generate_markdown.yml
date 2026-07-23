@@ -29,6 +29,6 @@ jobs:
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
-      - name: Push skills.md if changed
+      - name: Push skills.md if changed and UI tests pass
         run: |
           bash push_skills_md_if_changed_and_ui_tests_pass.sh
