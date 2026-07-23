@@ -1,4 +1,4 @@
-jekyll-and-bundler-install:
+install-jekyll:
 	apt-get update
 	apt-get install ruby-full -y
 	gem install jekyll
