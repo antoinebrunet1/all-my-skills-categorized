@@ -1,6 +1,6 @@
 export const testData = {
     url: "https://antoinebrunet1.github.io/all-my-skills-categorized/skills.html",
-    expectedText: {
+    expectedTexts: {
         h1: "All my skills categorized",
         h2: "Antoine Brunet",
         p: "Software developer + Quality assurance analyst // I produce scalable code and guarantee quality from software development and QA perspectives using pipelines",
