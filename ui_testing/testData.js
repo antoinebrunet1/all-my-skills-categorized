@@ -15,6 +15,7 @@ export const testData = {
         h2: "h2",
         p: "p",
         li: "li",
-        ul: "ul"
+        ul: "ul",
+        h3: "h3"
     }
 }
