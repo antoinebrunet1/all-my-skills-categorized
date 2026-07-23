@@ -1,5 +1,5 @@
 const { test } = require('@playwright/test');
-const {testData} = require("../testData");
+const {testData} = require("../test_data");
 const {checkIfElementsAreInAlphabeticalOrder} = require("./util");
 
 test.beforeEach(async ({ page }) => {

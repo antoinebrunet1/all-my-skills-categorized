@@ -1,6 +1,6 @@
 const { test } = require('@playwright/test');
 const {checkIfIsAbove, checkIfLocatorHasText} = require("./util");
-const {testData} = require("../testData");
+const {testData} = require("../test_data");
 
 test.beforeEach(async ({ page }) => {
     await page.goto(testData.url);
