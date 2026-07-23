@@ -1,4 +1,4 @@
-const { test, expect } = require('@playwright/test');
+const { test } = require('@playwright/test');
 const {checkIfIsAbove, checkIfLocatorHasText} = require("./util");
 const {testData} = require("../testData");
 
