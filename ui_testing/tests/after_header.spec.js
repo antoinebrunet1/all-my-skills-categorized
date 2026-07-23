@@ -19,7 +19,7 @@ test('List items are in alphabetical order for every list', async function ({ pa
     listsLocators.shift()
 
     for (const listLocator of listsLocators) {
-        const liLocators = listLocator.locator(testData.selectors.li)
+        const liLocators = await listLocator.locator(testData.selectors.li).all()
 
         await checkIfElementsAreInAlphabeticalOrder(liLocators)
     }
