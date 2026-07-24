@@ -28,7 +28,7 @@ jobs:
       - name: Compile project
         run: cd markdown_printer && mvn -q -e compile
       - name: Generate skills.md
-        run: cd markdown_printer && mvn -q -e -DskipTests exec:java -Dexec.mainClass="org.example.Main" > skills.md
+        run: cd markdown_printer && mvn -q -e -DskipTests exec:java -Dexec.mainClass="org.example.Main" > ../skills.md
       - name: UI tests
         run: make run-ui-tests-ci
       - name: Validate skills.md changed
