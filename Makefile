@@ -2,7 +2,7 @@ install-jekyll:
 	gem install jekyll jekyll-relative-links jekyll-remote-theme jekyll-seo-tag
 
 jekyll-build: install-jekyll
-	jekyll build
+	jekyll build && ls _site
 
 jekyll-serve: jekyll-build
 	nohup jekyll serve > backend.log 2>&1 &
