@@ -8,7 +8,7 @@ jekyll-serve: jekyll-build
 	nohup jekyll serve > backend.log 2>&1 &
 
 run-ui-tests-ci: jekyll-serve
-	cd ui_testing && npm init playwright@latest && npx playwright test --reporter=line
+	cd ui_testing &&  npx playwright test --reporter=line
 
 push-skills-md:
 	git config user.name "GitHub Actions Bot"
