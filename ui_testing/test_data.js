@@ -1,5 +1,5 @@
 export const testData = {
-    url: "http://localhost:4000/skills.html",
+    url: "http://127.0.0.1:4000/skills.html",
     expectedTexts: {
         h1: "All my skills categorized",
         h2: "Antoine Brunet",

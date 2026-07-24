@@ -5,7 +5,7 @@ jekyll-build: install-jekyll
 	jekyll build
 
 jekyll-serve: jekyll-build
-	jekyll serve
+	nohup jekyll serve > backend.log 2>&1 &
 
 wait-for-front-end: jekyll-serve
 	bash wait_for_frontend.sh
