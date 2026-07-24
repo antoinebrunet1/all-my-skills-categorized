@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 All my skills categorized
 =========================
 
