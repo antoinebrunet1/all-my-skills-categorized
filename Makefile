@@ -9,3 +9,13 @@ jekyll-serve: jekyll-build
 
 run-ui-tests-ci: jekyll-serve
 	cd ui_testing && npm install && npx playwright test --reporter=line
+
+push-skills-md:
+	git config user.name "GitHub Actions Bot"
+	git config user.email "<>"
+	git add skills.md
+	git commit -m "skills.md added by GitHub Actions"
+	git push origin master
+
+validate-skills-md-changed:
+	bash validate_skills_md_changed.sh
