@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$(make run-ui-tests-ci)" ] && [ "$(git diff skills.md)" ] ; then
+if [ "$(make run-ui-tests-ci)" ] && [ "$(git diff skills.md)" ]; then
   git config user.name "GitHub Actions Bot"
   git config user.email "<>"
   git add skills.md
