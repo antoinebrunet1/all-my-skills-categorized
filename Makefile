@@ -1,5 +1,5 @@
 install-jekyll:
-	gem install jekyll jekyll-relative-links
+	gem install jekyll jekyll-relative-links jekyll-remote-theme
 
 jekyll-build: install-jekyll
 	jekyll build
