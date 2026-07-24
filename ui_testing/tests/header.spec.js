@@ -6,7 +6,7 @@ test.beforeEach(async ({ page }) => {
     await page.goto(testData.url);
 });
 
-test.only('Header has correct text', async function ({ page }) {
+test('Header has correct text', async function ({ page }) {
     const h1Locator = await page.locator(testData.selectors.h1)
     const h2Locator = await page.locator(testData.selectors.h2)
     const pLocator = await page.locator(testData.selectors.p)
