@@ -7,7 +7,10 @@ jekyll-build: install-jekyll
 jekyll-serve: jekyll-build
 	nohup jekyll serve > backend.log 2>&1 &
 
-run-ui-tests-ci: jekyll-serve
+wait-for-front-end: jekyll-serve
+	bash wait_for_frontend.sh
+
+run-ui-tests-ci: wait-for-front-end
 	cd ui_testing &&  npx playwright test --reporter=line
 
 push-skills-md:
