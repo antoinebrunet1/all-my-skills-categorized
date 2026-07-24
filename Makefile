@@ -11,7 +11,7 @@ wait-for-front-end: jekyll-serve
 	bash wait_for_frontend.sh
 
 run-ui-tests-ci: wait-for-front-end
-	cd ui_testing && npm i -D @playwright/test && npx playwright test --reporter=line
+	cd ui_testing && npm i -D @playwright/test && npx playwright install && npx playwright test --reporter=line
 
 push-skills-md:
 	git config user.name "GitHub Actions Bot"
