@@ -20,9 +20,6 @@ push-skills-md:
 	git commit -m "skills.md added by GitHub Actions"
 	git push origin master
 
-validate-skills-md-changed:
-	bash validate_skills_md_changed.sh
-
 compile-markdown-printer:
 	cd markdown_printer && mvn -q -e compile
 

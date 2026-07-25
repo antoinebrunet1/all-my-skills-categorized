@@ -35,3 +35,5 @@ jobs:
         run: make validate-skills-md-changed
       - name: Push skills.md if changed and UI tests pass
         run: make push-skills-md
+      - name: Push skills.md if changed and UI tests pass and fail step if UI tests fail
+        run: bash push_skills_md.sh
