@@ -22,3 +22,9 @@ push-skills-md:
 
 validate-skills-md-changed:
 	bash validate_skills_md_changed.sh
+
+compile-markdown-printer:
+	cd markdown_printer && mvn -q -e compile
+
+generate-skills-md:
+	cd markdown_printer && mvn -q -e -DskipTests exec:java -Dexec.mainClass="org.example.Main" > ../skills.md
