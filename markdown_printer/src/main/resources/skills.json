@@ -92,6 +92,7 @@
   ],
   "Text formats": [
     "JSON",
-    "JSON schema"
+    "JSON schema",
+    "Markdown"
   ]
 }
