@@ -32,9 +32,11 @@ Software developer + Quality assurance analyst // I produce scalable code and gu
 
 ### IDEs/Code editors
 
+- CLion
 - IntelliJ
 - PyCharm
 - Visual Studio Code
+- WebStorm
 
 ### Languages
 
