@@ -57,7 +57,9 @@
   "IDEs/Code editors": [
     "PyCharm",
     "Visual Studio Code",
-    "IntelliJ"
+    "IntelliJ",
+    "CLion",
+    "WebStorm"
   ],
   "Fields other than computer science": [
     "Mathematics",
