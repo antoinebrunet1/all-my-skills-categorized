@@ -112,6 +112,7 @@ Software developer + Quality assurance analyst // I produce scalable code and gu
 
 - JSON
 - JSON schema
+- Markdown
 
 ### Version control
 
