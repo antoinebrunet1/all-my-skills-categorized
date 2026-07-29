@@ -90,7 +90,7 @@ Software developer + Quality assurance analyst // I produce scalable code, creat
 - Creativity
 - Innovation
 - Leadership
-- Problem solving
+- Problem-solving
 - Teamwork
 
 ### Tests
