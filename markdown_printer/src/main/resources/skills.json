@@ -94,5 +94,8 @@
     "JSON",
     "JSON schema",
     "Markdown"
+  ],
+  "NoSQL": [
+    "Firestore"
   ]
 }
