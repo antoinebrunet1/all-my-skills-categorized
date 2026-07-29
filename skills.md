@@ -49,6 +49,10 @@ Software developer + Quality assurance analyst // I produce scalable code, creat
 - Google Cloud console
 - Splunk
 
+### NoSQL
+
+- Firestore
+
 ### Operating systems
 
 - Linux
