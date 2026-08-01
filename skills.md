@@ -66,8 +66,6 @@ Software developer & Quality assurance analyst // Producing scalable code. // Cr
 ### Programming languages
 
 - C
-- CSS
-- HTML
 - Java
 - JavaScript
 - Python
