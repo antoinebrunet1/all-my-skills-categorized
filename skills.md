@@ -8,7 +8,7 @@ All my skills categorized
 Antoine Brunet
 --------------
 
-Software developer & Quality assurance analyst // Producing scalable code. // Creating algorithms for highly complex problems. // Guaranteeing dev/QA quality with pipelines.
+Software developer & QA analyst &#124; Developed 3 full stack apps with Angular/Spring Boot &#124; Automated/maintained 200+ web app and API tests
 
 - **LinkedIn profile:** [https://www.linkedin.com/in/antoinebrunet97/](https://www.linkedin.com/in/antoinebrunet97/)
 - **Email:** antoinebrunet1@outlook.com
