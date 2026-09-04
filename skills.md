@@ -58,6 +58,10 @@ Software developer/QA analyst &#124; Developed/maintained 6 full stack apps &#12
 - Linux
 - Windows
 
+### Performance testing
+
+- JMeter
+
 ### Presentation
 
 - LaTeX
